@@ -1,0 +1,45 @@
+<!-- <script>
+    let username = "john";
+    let age = 22;
+    let msg1 = "Hello !" + " " + username + "you will be"+ " "+ (age + 1)+ " next year.<br>";//using double quotes
+    let msg2 = `Hello ! ${username} you will be ${age+1}next year.<br>`;//using backtick
+    document.write(msg1);
+    document.write(msg2);
+     var path ="\"\d:image\\boy.jpg\""
+     document.write(path);
+   </script> -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javaScript">
+        function SubmitClick(){
+            let username = document.getElementById("UserName").value;
+            let userError = document.getElementById("userError");
+
+            if(username=="") {
+                userError.innerHTML= "User Name Reuired".fontcolor(`red`).bold().italics();
+            }else{
+                document.write(`Hello! ${username}`);
+            }
+        }
+        function ChangeCase(){
+            let username = document.getElementById("UserName").value;
+            document.getElementById("UserName").value= username.toUpperCase();
+            document.getElementById("UserName").style.color=`red`;
+        }
+        </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+         <dd><input type="text" onblur="ChangeCase()" id ="UserName" placeholder="Only Block Letter"></dd> //when u click outside: onblur. 
+        <dd id="userError"></dd>                                                         //onkeyup : immediately change.
+    </dl>
+    <button onclick="SubmitClick()">Submit</button>
+   
+</body>
+</html> 
