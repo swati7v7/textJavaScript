@@ -1,0 +1,37 @@
+<!-- <script>
+let age = prompt("enter the age");
+document.write( " your age is : " ,parseInt(age) + 1);
+let rate = prompt ("enter the no.");
+ document.write(" your age " , parseFloat(rate)+2);
+</script> -->
+<!-- <script>
+    var age = prompt("enter the age");
+    if(isNaN(age)){
+        document.write("age must no.");
+    }else{
+        document.write("age is:" ,age);
+    }
+</script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type ="text/javascript">
+      function DeleteClick(){
+   flag = confirm("deleted\nrecord wil be del.")
+   if(flag==true){
+    document.getElementById("deleted").innerHTML= "<font color='red'>succesfuly</font>";
+      } else {
+        document.querySelector("p").innerHTML="<font color ='blue'>you canceled</font>";
+      }
+    }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()"> delete </button>
+    <p  id = "deleted" align="center"></p>
+</body>
+</html>
