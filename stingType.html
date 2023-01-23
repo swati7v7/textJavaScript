@@ -21,7 +21,7 @@
             let userError = document.getElementById("userError");
 
             if(username=="") {
-                userError.innerHTML= "User Name Reuired".fontcolor(`red`).bold().italics();
+                userError.innerHTML= "User Name Required".fontcolor(`red`).bold().italics();
             }else{
                 document.write(`Hello! ${username}`);
             }
@@ -36,8 +36,8 @@
 <body>
     <dl>
         <dt>User Name</dt>
-         <dd><input type="text" onblur="ChangeCase()" id ="UserName" placeholder="Only Block Letter"></dd> //when u click outside: onblur. 
-        <dd id="userError"></dd>                                                         //onkeyup : immediately change.
+         <dd><input type="text" onblur="ChangeCase()" id ="UserName" placeholder="Only Block Letter"></dd>  //when u click outside: onblur. 
+        <dd id="userError"></dd>                                                                 //onkeyup : immediately change.
     </dl>
     <button onclick="SubmitClick()">Submit</button>
    
